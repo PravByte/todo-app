@@ -32,7 +32,7 @@ const App = () => {
 
   return (
     <div className='p-4 bg-blue-950 h-166' style={{ fontFamily: 'cursive', marginTop: '-17px' }}>
-      <div className=" p-3 h-150 md:p-6 w-full md:w-200 rounded-md lg:w-150 container mx-auto flex  flex-col items-center mt-5 bg-white shadow-2xl">
+      <div className=" p-3 h-150 md:p-6 w-full md:w-200 rounded-md lg:w-150 container mx-auto flex  flex-col items-center mt-5 bg-white">
         <h1 className='text-3xl text-green-800 mt-10 '>Hey! What's your Plan Today?</h1>
         <div>
           <form className='  mt-20 ' action="" method='get' onSubmit={getit}>
@@ -47,10 +47,10 @@ const App = () => {
           </form>
         </div>
         {submit?.length > 0 ? (
-          <div className="flex flex-col gap-3 overflow-auto max-h-[300px] ">
+          <div className="flex flex-col gap-3 overflow-auto max-h-[300px] bg-sky-100 p-10 rounded-md mt-5 ">
             {submit.map((element, index) => (
               <div
-               style={{fontFamily:'sans-serif'}}   className="bg-fuchsia-300 text-stone-900  p-2 rounded-md flex  items-center justify-between w-full mt-5"
+                 className="bg-blue-300 text-stone-900  p-2 rounded-md flex  items-center justify-between w-full mt-5"
                 key={index}
               >
                <div className=''>
